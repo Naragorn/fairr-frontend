@@ -1,0 +1,48 @@
+[
+	{
+		"image": "https://testing.fairr.online/task/fairriester.svg",
+		"title": "fairriester",
+		"description": "Der fairr.de Riester-Fondssparplan"
+	},
+	{
+		"image": "https://testing.fairr.online/task/fairrelax.svg",
+		"title": "fairrelax",
+		"description": "Klassische Riester-Rentenversicherung"
+	},
+	{
+		"image": "https://testing.fairr.online/task/fairruerup.svg",
+		"title": "fairrürup",
+		"description": "Der fairr.de Rürup-Fondssparplan"
+	},
+	{
+		"image": "https://testing.fairr.online/task/fairrbav.svg",
+		"title": "fairbav",
+		"description": "Betriebliche Altersvorsorge mit Fondssparplan"
+	},
+	{
+		"image": "https://testing.fairr.online/task/cockpit.jpg",
+		"title": "Cockpit",
+		"description": "Habe alle Deine Renten-Bausteine tagesaktuell im Blick."
+	},
+	{
+		"image": "https://testing.fairr.online/task/rentist.jpg",
+		"title": "Rentist",
+		"description": "Der fairr.de Rentist, kenne und fülle Deine Rentenlücke!"
+	},
+	{
+		"image": "https://testing.fairr.online/task/jens.jpg",
+		"title": "Jens Jennissen",
+		"description": "Private Rente muss verständlich und für jeden zugänglich sein."
+	},
+	{
+		"image": "https://testing.fairr.online/task/alex.jpg",
+		"title": "Dr. Alexander Kihm",
+		"description": "Alters­­vorsorge macht mit den richtigen Produkten endlich Sinn."
+	},
+	{
+		"image": "https://testing.fairr.online/task/ambros.jpg",
+		"title": "Ambros Gleißner",
+		"description": "Die Zukunft der Alters­vorsorge ist digital und transparent."
+	}
+]
+
