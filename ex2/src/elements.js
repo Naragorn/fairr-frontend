@@ -6,7 +6,7 @@ class Elements extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: false
+
     };
     this.handleChange = this.handleChange.bind(this);
     this.initElementsToState();
@@ -21,15 +21,18 @@ class Elements extends Component {
       descr = "desc" + i;
       this.state[name] = title;
       this.state[descr] = desc;
+      this.state["open"+i] = false;
     });
   }
 
-  onOpenModal = () => {
-    this.setState({ open: true });
+  onOpenModal = (i) => {
+    this.state["open"+i] = true;
   };
 
   onCloseModal = () => {
-    this.setState({ open: false });
+    elements.map((el, i) => {
+      this.state["open"+i] = false;
+    });
   };
 
   onSaveModal = () => {
@@ -53,9 +56,9 @@ class Elements extends Component {
                <br/>
                Description: {this.state["desc"+i]}
                <br/>
-               <button onClick={this.onOpenModal}>Edit</button>
+               <button onClick={this.onOpenModal(i)}>Edit</button>
                <br/><br/>
-               <Modal open={open} onClose={this.onCloseModal} center>
+               <Modal open={["open"+i]} onClose={this.onCloseModal} center>
                  <h1>Edit</h1>
                  <p>Title:</p>
                  <p>
