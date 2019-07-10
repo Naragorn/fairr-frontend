@@ -1,0 +1,29 @@
+- <form>
+  Line 8: type should be "password"
+  Line 9: should be <input type="submit" value="Submit">
+
+- PHP part:
+  Line 11: should be <?php
+  Dev forgot to prevent SQL injection, and should have done something like this:
+  // sanitize
+  $query = sprintf("SELECT * FROM users
+    WHERE name = '%s' AND password = '%s'",
+    mysql_real_escape_string($username),
+    mysql_real_escape_string($password));
+
+  // now query
+  $data = mysql_query($query);
+
+- Result:
+  Line 15:
+
+  For better debugging show mysql errors etc.:
+  if (!$data) {
+    $message  = 'Invalid query: ' . mysql_error() . "\n";
+    $message .= 'Whole query: ' . $query;
+    die($message);
+  }
+
+- Finally free resources:
+  Possibly Line: 16+:
+    mysql_free_result($data);
